@@ -11,9 +11,9 @@ trigger:
 variables:
   tag: '$(Build.buildid)'
 
-appendCommitMessageToRunName:
+
 stages:
-#Build Stage
+# Build Stage
 -stage: build stage
  displayname: build stage
  jobs:
