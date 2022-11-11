@@ -17,10 +17,10 @@ stages:
 - stage: build stage
   displayname: build stage
   jobs:
- - job: Build job
-   Display Name: Build Job
-   Pool:
-    vmImage: 'ubuntu-latest'
+  - job: Build
+    Display Name: Build Job
+    Pool:
+      vmImage: 'ubuntu-latest'
    Steps:
   # Task-1: Build Docker Image and push to Azure Container Registry ACR
     - task: Docker@2
